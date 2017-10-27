@@ -19,7 +19,7 @@ header
     width:64px;
     margin-top: -18px;
 }
-    
+
 .lst-menu a:hover,#mobile-bar a:hover
 {
     color:#90989A;
@@ -205,4 +205,14 @@ footer
 {
     margin-left:10%;
     margin-right:10%;
+}
+
+.home
+{
+  margin-top:20px;
+}
+
+.img-google-play
+{
+  width:360px;
 }
