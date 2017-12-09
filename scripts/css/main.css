@@ -1,0 +1,218 @@
+﻿html,body{height:100%;}
+
+body
+{
+    background-color:#000000;
+}
+
+.container {
+    height:100%;
+}
+
+header
+{
+    margin-bottom:35px;
+}
+.brandlogo
+{
+    height:64px;
+    width:64px;
+    margin-top: -18px;
+}
+
+.lst-menu a:hover,#mobile-bar a:hover
+{
+    color:#90989A;
+    text-decoration:none;
+}
+
+.lst-menu a:link,#mobile-bar a:link
+{
+    color:#90989A;
+    text-decoration:none;
+}
+
+.lst-menu a:visited,#mobile-bar a:visited
+{
+    color:#90989A;
+    text-decoration:none;
+}
+
+.lst-menu a:active,#mobile-bar a:active
+{
+    color:#fa7900;
+    text-decoration:none;
+}
+
+.lst-menu a.active,#mobile-bar a.active
+{
+    color:#fa7900;
+    text-decoration:none;
+}
+
+#desktop-bar
+{
+    margin-top: 15px;
+}
+
+#desktop-bar li
+{
+   margin-left:30px;
+}
+
+#desktop-bar li:first-child
+{
+    margin-left:0px;
+}
+
+.align-center
+{
+    text-align:center;
+}
+
+.active
+{
+    color:#fa7900;
+}
+.text-muted a
+{
+    color: #CCCCCC;
+    margin-left:15px;
+}
+
+.text-muted a:first-child
+{
+    margin-left:0px;
+}
+
+footer
+{
+  /*  margin-top:65px;*/
+    padding-bottom:25px;
+    padding-top:25px;
+    background-color:#313436;
+}
+
+.img-screenshot
+{
+    margin-top:25px;
+}
+
+.margin-twitter-row
+{
+    margin-top:75px;
+    margin-bottom:40px;
+}
+
+.margin-twitter-bottom
+{
+    margin-bottom:25px;
+}
+
+.margin-twitter-top
+{
+    margin-top:45px;
+}
+
+.row-separator
+{
+    margin-top:25px;
+}
+
+.legal
+{
+    margin-top:50px;
+    font-size:10px;
+    color:#FFFFFF;
+}
+
+.youtube-video
+{
+    border: 0px;
+}
+
+.margin-auto
+{
+    margin:auto;
+}
+
+#home
+{
+    background-color:#000000;
+}
+
+.clear-both
+{
+    clear:both;
+}
+
+.container {
+    height:100%;
+}
+
+.fill{
+    width:100%;
+    height:100%;
+    min-height:100%;
+    background-color:#000000;
+    padding:10px;
+    color:#efefef;
+}
+
+.section
+{
+    margin-top:35px;
+}
+
+.anchor
+{
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media(max-width:767px)
+{
+    .section
+    {
+        min-height:300px;
+    }
+}
+
+@media(min-width:768px)
+{
+    .section
+    {
+        min-height:340px;
+    }
+}
+@media(min-width:992px)
+{
+    .section
+    {
+        min-height:800px;
+    }
+}
+
+@media(min-width:1200px)
+{
+    .section
+    {
+        min-height:1080px;
+    }
+}
+
+.section
+{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.home
+{
+  margin-top:20px;
+}
+
+.img-google-play
+{
+  width:360px;
+}
