@@ -1,9 +1,0 @@
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\bin\DarkRespawnWeb.dll.config
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\bin\DarkRespawnWeb.dll
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\bin\DarkRespawnWeb.pdb
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\obj\Debug\DarkRespawnWeb.csprojResolveAssemblyReference.cache
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\obj\Debug\DarkRespawnWeb.csproj.CoreCompileInputs.cache
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\obj\Debug\DarkRespawnWeb.dll
-C:\Users\xutur\source\repos\DarkRespawnWeb\DarkRespawnWeb\obj\Debug\DarkRespawnWeb.pdb
