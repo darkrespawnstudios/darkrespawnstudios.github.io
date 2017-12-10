@@ -207,12 +207,24 @@ footer
     margin-right:10%;
 }
 
-.home
+#home
 {
   margin-top:20px;
+  text-align:center;
 }
 
 .img-google-play
 {
   width:360px;
+}
+
+#navbarNav ul
+{
+    margin:auto;
+}
+
+/*All but thead first element:*/
+#navbarNav ul li ~ li
+{
+    margin-left:25px;
 }

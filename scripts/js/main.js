@@ -52,10 +52,14 @@ $(document).ready(function () {
         virtualClick = false;
     });
 
+    $(".linkhome").addClass("active");
+
+
     //Load the main page.
     $("main").load('scripts/html/main.html', function () {
         showContent(processUrl);
     });
+
 });
 
 function showContent(callback) {
@@ -63,7 +67,7 @@ function showContent(callback) {
 }
 
 function hideContent() {
-    $("main").hide();
+  //  $("main").hide();
 }
 
 function animationAnchor(hash, parent) {
@@ -93,18 +97,17 @@ function processUrl() {
             case "#news":
                 virtualClick = true;
                 $(".linknews").click();
+                $(".linknews").addClass("active");
                 break;
             case "#about":
                 virtualClick = true;
                 $(".linkabout").click();
+                $(".linkabout").addClass("active");
                 break;
             case "#AvoidTheWalls":
                 virtualClick = true;
                 $(".linkatw").click();
-                break;
-            case "#Blog":
-                virtualClick = true;
-                $(".linkBlog").click();
+                $(".linkatw").addClass("active");
                 break;
         }
     }
