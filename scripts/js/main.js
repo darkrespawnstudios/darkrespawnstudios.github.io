@@ -4,30 +4,30 @@ var virtualClick = false;
 $(document).ready(function () {
     //Subscribe to click events in menu
     $(".navigation ul li a[href^='#']").click(function (e) {
-
         e.preventDefault();
         $(".navigation ul li a").removeClass("active");
 
         // store hash
         var hash = this.hash;
         var parent = this;
+        var nextUrl ="scripts/html/main.html";
 
-        if (hash == "#AvoidTheWalls" && currenthash != "#AvoidTheWalls") {
-            $("main").load('scripts/html/avoidthewalls.html', function () {
-                $("main").removeClass("fill");
-                finishChangePage(hash, parent);
-                showContent();
-            });
+        switch (hash)
+        {
+            case "#news":
+                nextUrl = "scripts/html/news.html";
+                break;
+            case "#about":
+                nextUrl = "scripts/html/about.html";
+                break;
         }
-        else {
-            if (currenthash == "#AvoidTheWalls" ) {
-                //Si estamos fuera de la home, la recargamos.
-                $("main").load('scripts/html/main.html', function () {
-                    $("main").addClass("fill");
-                    showContent(processUrl);
-                });
-            }
-        }
+
+        $("main").load(nextUrl, function () {
+            $("main").removeClass("fill");
+            finishChangePage(hash, parent);
+            showContent();
+        });
+        
     });
 
     $(".linkhome").addClass("active");

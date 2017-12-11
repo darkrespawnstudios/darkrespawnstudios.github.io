@@ -9,6 +9,10 @@ body
     height:100%;
 }
 
+.padding-top-0{
+    padding-top:0px !important;
+}
+
 header
 {
     margin-bottom:35px;
@@ -146,9 +150,6 @@ footer
     clear:both;
 }
 
-.container {
-    height:100%;
-}
 
 .fill{
     width:100%;
