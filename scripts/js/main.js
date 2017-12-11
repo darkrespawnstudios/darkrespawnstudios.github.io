@@ -1,7 +1,10 @@
 ﻿var currenthash = "#home";
 var virtualClick = false;
 
-$(document).ready(function () {
+$(document).ready(function ()
+{
+    var urlParts = window.location.href.split('/');
+    $(".nav-link").removeClass("active");
     //Subscribe to click events in menu
     $(".navigation ul li a[href^='#']").click(function (e) {
         e.preventDefault();
@@ -29,7 +32,10 @@ $(document).ready(function () {
         });
         
     });
-
+    
+    if (urlParts[urlParts.length - 2].toString() == "AvoidTheWalls")
+        $(".linkatw").addClass("active");
+    else
     $(".linkhome").addClass("active");
     
     //Load the main page.

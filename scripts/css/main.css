@@ -145,6 +145,20 @@ footer
     background-color:#000000;
 }
 
+#home h5{
+    color:#7d7d7d;
+}
+
+#home h4 
+{
+    color: #bdbdbd;
+}
+
+#home h3 
+{
+    color: #ffffff;
+}
+
 .clear-both
 {
     clear:both;
