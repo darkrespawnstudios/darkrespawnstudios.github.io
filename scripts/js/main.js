@@ -9,7 +9,7 @@ $(document).ready(function ()
     $(".navigation ul li a[href^='#']").click(function (e) {
         e.preventDefault();
         $(".navigation ul li a").removeClass("active");
-
+        $("footer").removeClass("sticky-footer");
         // store hash
         var hash = this.hash;
         var parent = this;
@@ -17,11 +17,12 @@ $(document).ready(function ()
 
         switch (hash)
         {
-            case "#news":
-                nextUrl = "scripts/html/news.html";
+            case "#home":
+                $("footer").addClass("sticky-footer");
                 break;
             case "#about":
                 nextUrl = "scripts/html/about.html";
+                $("footer").addClass("sticky-footer");
                 break;
         }
 
@@ -54,6 +55,7 @@ function finishChangePage(hash, parent) {
     window.location.hash = hash;
     $(parent).addClass("active");
     currenthash = hash;
+    $('html').scrollTop(0);
 }
 
 function processUrl() {
@@ -63,11 +65,6 @@ function processUrl() {
             case "#home":
                 virtualClick = true;
                 $(".linkhome").click();
-                break;
-            case "#news":
-                virtualClick = true;
-                $(".linknews").click();
-                $(".linknews").addClass("active");
                 break;
             case "#about":
                 virtualClick = true;
