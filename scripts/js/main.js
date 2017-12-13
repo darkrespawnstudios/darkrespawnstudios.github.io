@@ -1,31 +1,23 @@
 ﻿var currenthash = "#home";
 var virtualClick = false;
 
-$(document).ready(function ()
-{
+$(document).ready(function () {
+    
     var urlParts = window.location.href.split('/');
     $(".nav-link").removeClass("active");
     //Subscribe to click events in menu
     $(".navigation ul li a[href^='#']").click(function (e) {
         e.preventDefault();
         $(".navigation ul li a").removeClass("active");
-        $("footer").removeClass("sticky-footer");
+
         // store hash
         var hash = this.hash;
         var parent = this;
         var nextUrl ="scripts/html/main.html";
 
-        switch (hash)
-        {
-            case "#home":
-                $("footer").addClass("sticky-footer");
-                break;
-            case "#about":
-                nextUrl = "scripts/html/about.html";
-                $("footer").addClass("sticky-footer");
-                break;
-        }
-
+        if (hash == "#about")
+            nextUrl = "scripts/html/about.html";
+        
         $("main").load(nextUrl, function () {
             $("main").removeClass("fill");
             finishChangePage(hash, parent);
@@ -33,17 +25,24 @@ $(document).ready(function ()
         });
         
     });
-    
-    if (urlParts[urlParts.length - 2].toString() == "AvoidTheWalls")
-        $(".linkatw").addClass("active");
-    else
-    $(".linkhome").addClass("active");
-    
-    //Load the main page.
-    $("main").load('scripts/html/main.html', function () {
-        showContent(processUrl);
+
+    $(window).on("orientationchange", function (event) {
+        if ($(window).height() > 1000 && location.hash == "#home")
+            $("footer").addClass("sticky-footer");
+        else
+            $("footer").removeClass("sticky-footer");
     });
 
+    if (urlParts[urlParts.length - 2].toString() == "AvoidTheWalls")
+        $(".linkatw").addClass("active");
+    else {
+        $(".linkhome").addClass("active");
+
+        //Load the main page.
+        $("main").load('scripts/html/main.html', function () {
+            showContent(processUrl);
+        });
+    }
 });
 
 function showContent(callback) {
@@ -71,11 +70,11 @@ function processUrl() {
                 $(".linkabout").click();
                 $(".linkabout").addClass("active");
                 break;
-            case "#AvoidTheWalls":
-                virtualClick = true;
-                $(".linkatw").click();
-                $(".linkatw").addClass("active");
-                break;
         }
     }
+
+    if ($(window).height() > 1000 && location.hash == "#home")
+        $("footer").addClass("sticky-footer");
+    else
+        $("footer").removeClass("sticky-footer");
 }

@@ -18,49 +18,6 @@ header {
     margin-bottom: 35px;
 }
 
-.brandlogo {
-    height: 64px;
-    width: 64px;
-    margin-top: -18px;
-}
-
-.lst-menu a:hover, #mobile-bar a:hover {
-    color: #90989A;
-    text-decoration: none;
-}
-
-.lst-menu a:link, #mobile-bar a:link {
-    color: #90989A;
-    text-decoration: none;
-}
-
-.lst-menu a:visited, #mobile-bar a:visited {
-    color: #90989A;
-    text-decoration: none;
-}
-
-.lst-menu a:active, #mobile-bar a:active {
-    color: #fa7900;
-    text-decoration: none;
-}
-
-.lst-menu a.active, #mobile-bar a.active {
-    color: #fa7900;
-    text-decoration: none;
-}
-
-#desktop-bar {
-    margin-top: 15px;
-}
-
-    #desktop-bar li {
-        margin-left: 30px;
-    }
-
-        #desktop-bar li:first-child {
-            margin-left: 0px;
-        }
-
 .align-center {
     text-align: center;
 }
@@ -122,11 +79,9 @@ footer {
 #home {
     background-color: #000000;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     text-align: center;
 }
-
-
 
     #home h4 {
         color: #bdbdbd;
@@ -189,4 +144,27 @@ footer {
 #about .card
 {
     margin:auto;
+}
+
+.about
+{
+    margin-top:30px;
+    color:#CCCCCC;
+    text-align:justify;
+    margin-bottom:50px;
+}
+
+.text-color
+{
+color:#CCCCCC;
+}
+
+.cards-about
+{
+    margin-top:25px;
+}
+
+.features
+{
+    width:60%;
 }
