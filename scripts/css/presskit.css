@@ -3,30 +3,15 @@
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     line-height: 1.6em;
-    background: #dbdddf url('background.png') no-repeat bottom left !important;
 }
 
 img {
     width: 100%;
 }
 
-a:link {
-    color: #fa7900;
-}
-
-a:visited {
-    color: #fa7900;
-}
-
-a:hover {
-    color: #da5900;
-}
-
 #navigation h1.nav-header {
     padding: 0 15px;
     margin-bottom: 0;
-    font-family: Dickie, Arial, Helvetica, sans-serif;
-    font-size: 4em;
 }
 
 #navigation a.nav-header {
@@ -42,10 +27,13 @@ a:hover {
     padding-bottom: 10px;
 }
 
+#navigation li.language-select select {
+    float: right;
+}
+
 #content h2 {
-    font-family: Dickie, Arial, Helvetica, sans-serif;
-    font-size: 3em;
-    /*font-family: Georgia, "Times New Roman", Times, serif;*/
+    font-family: Georgia, "Times New Roman", Times, serif;
+    s
 }
 
 #content img.header {
