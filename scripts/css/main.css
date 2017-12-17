@@ -159,11 +159,6 @@ footer {
 color:#CCCCCC;
 }
 
-.cards-about
-{
-    margin-top:25px;
-}
-
 .features
 {
     width:60%;
@@ -172,4 +167,9 @@ color:#CCCCCC;
 .uderlined
 {
     text-decoration:underline;
+}
+
+.without-margin-botom
+{
+    margin-bottom:0px !important;
 }
